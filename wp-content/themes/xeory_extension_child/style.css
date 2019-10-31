@@ -1,0 +1,334 @@
+@charset "utf-8";
+/*
+Theme Name: xeory_extension_child
+Template: xeory_extension
+*/
+
+body {
+  font-family: "Hind Siliguri", "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", sans-serif;
+}
+
+/* ----- header ----- */
+#header {
+  background: #000154;
+  height: 120px;
+}
+@media (max-width: 991px) {
+  #header {
+    height: 90px;
+  }
+}
+
+/* ----- header logo ----- */
+#header #logo {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  #header #logo {
+    padding: 0;
+  }
+}
+
+/* ----- header nav ----- */
+#gnav-ul {
+  padding-top: 20px !important;
+  background: #000154;
+}
+
+#gnav-ul .menu-item a {
+  background: #000154 !important;
+  color: white !important;
+  font-size: 20px;
+}
+
+#gnav-ul .menu-item a:hover {
+  background: #2f2f51 !important;
+}
+
+#header-nav-btn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #gnav-sp {
+    top: 0 !important;
+    background: #000154 !important;
+    z-index: 5 !important;
+  }
+}
+
+#responsive-menu-button {
+  border-radius: 50%;
+}
+
+/* ----- eyecatch ----- */
+body.home #main_visual {
+  width: 100%;
+  height: 83vh !important;
+  background-image: url(imgs/cosme.jpg) !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #000 !important;
+}
+
+body.home #main_visual .wrap h2 {
+  font-size: 40px;
+}
+@media (max-width: 767px) {
+  body.home #main_visual .wrap h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  body.home #main_visual .wrap h2 {
+    font-size: 23px;
+  }
+}
+/* ----- トップページ：非表示 ----- */
+#content {
+  padding-top: 0;
+}
+
+#content #popular_post_content,
+#content #recent_post_content {
+  display: none;
+}
+
+/* ----- トップページ：見出しのアイコンを消す ----- */
+#popular_post_content h2 i,
+#recent_post_content h2 i {
+  display: none;
+}
+
+/* ----- トップページ：見出しの突起を消す ----- */
+body.home .tri-border {
+  display: none;
+}
+
+/* ----- トップページ：記事カテゴリー色変更 ----- */
+
+body.home .front-loop .popular_post_box .p_category {
+  background: #fff;
+  border: solid 1px #160f29;
+  color: #160f29;
+}
+
+/* トップページ：クローズアップ記事・サービス記事の色変更 */
+/* ----- 帯 ----- */
+body.home .front-main-cont .front-cont-header {
+  padding: 20px 0;
+  background: #000154;
+  color: white !important;
+}
+
+/* ----- 数字背景色 ----- */
+body.home #front-contents .c_number {
+  background: #ffb6c3;
+  color: black;
+}
+
+/* ----- 帯 ----- */
+body.home #front-contents h3 {
+  color: #160f29;
+}
+
+/* ----- タイトル ----- */
+body.home #front-service .front-service-inner h3 {
+  color: #160f29;
+}
+
+/* ----- リンクボタン ----- */
+.c_btn .btn {
+  background-color: #f3dfc1 !important;
+  color: black !important;
+}
+
+/* ----- トップページ：サービス記事の修正（画面幅991px以下） ----- */
+@media (max-width: 991px) {
+  body.home #front-service .front-cont-header {
+    margin-bottom: 30px !important;
+  }
+
+  body.home #front-service .front-service-inner .c_box {
+    padding-top: 10px;
+  }
+
+  body.home #front-service .front-service-inner .c_box:first-child {
+    border-bottom: solid 1px #ababab;
+  }
+
+  body.home #front-service .front-service-inner .c_box h3 {
+    margin-top: 5px;
+    font-size: 25px;
+  }
+
+  body.home #front-service .front-service-inner .c_box .c_text br {
+    display: none;
+  }
+}
+
+/* ----- 会社情報の色変更 ----- */
+body.home #front-company dl#front-company-1 dt {
+  border-top: 2px solid #000154;
+}
+
+/* ----- お問い合せの色変更 ----- */
+#front-contact .c_box {
+  background-color: #fff;
+}
+
+#front-contact label {
+  color: #000;
+}
+
+body.home #front-contact input,
+body.home #front-contact textarea {
+  border: solid 1px #58656e;
+  width: 100% !important;
+}
+
+body.home #front-contact input.wpcf7-submit {
+  background-color: #f3dfc1 !important;
+  color: #160f29;
+  border: none;
+}
+
+/* ----- フッターの背景色変更 ----- */
+#footer {
+  border-top: solid 8px #160f29 !important;
+}
+
+#footer #footer-brand-area {
+  border-bottom: 1px solid #160f29;
+}
+
+#footer .footer-01 {
+  background-color: #160f29;
+}
+
+#footer .footer-02 {
+  background-color: #160f29;
+}
+
+/* ----- フッターの文章を左寄せ ----- */
+.footer-address {
+  text-align: left !important;
+}
+
+/* ----- フッターのナビを中央寄せ ----- */
+@media (max-width: 767px) {
+  #footer-content-area {
+    width: 200px;
+    margin: 0 auto !important;
+  }
+}
+
+/* ----- フッターのナビのソーシャルメディアの上margin調節 ----- */
+#footer-cont-content {
+  margin-bottom: 10px;
+}
+
+/* ----- 固定・投稿ページのリンク色を変更 ----- */
+.single #main article a,
+.page #main article a {
+  color: #160f29 !important;
+}
+
+.breadcrumb-area a {
+  color: #160f29 !important;
+}
+
+.side-widget a {
+  color: #160f29;
+}
+
+/* ----- 固定・投稿ページの文字サイズを変更 ----- */
+.post-content {
+  font-size: 17px;
+  line-height: 1.8em;
+}
+
+@media (min-width: 768px) {
+  .post-content {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .post-content {
+    font-size: 19px;
+  }
+}
+
+/* ----- 固定・投稿ページの背景色を変更 ----- */
+#content {
+  background-color: #fafafa !important;
+}
+
+/* ----- 投稿ページのカテゴリー色を変更 ----- */
+.post-header .cat-name span {
+  border: 1px solid #160f29;
+  color: #160f29;
+}
+
+/* ----- 投稿ページの見出し色を変更 ----- */
+#content .post-content h2 {
+  background-color: #000154;
+  border-left: solid 10px #f3dfc1;
+}
+
+#content .post-content h3 {
+  border-bottom: 2px solid #f3dfc1;
+}
+
+#content .post-content h4 {
+  border-left: 5px solid #f3dfc1;
+}
+
+/* ----- 投稿ページのCTA色を変更 ----- */
+#content .post-cta {
+  background-color: #160f29;
+}
+
+#main article .post-cta-btn .button {
+  background-color: #000154;
+  color: #fff !important;
+}
+
+/* ----- 投稿ページのコメント欄を変更 ----- */
+#content #comments h4 {
+  border-bottom: 5px solid #160f29;
+}
+
+#content #comments a {
+  color: #160f29;
+}
+
+#content form input[type="submit"] {
+  background-color: #000154;
+  color: black !important;
+}
+
+/* ----- 投稿ページのコメント数表示を消す ----- */
+li.comments {
+  display: none !important;
+}
+
+/* ----- アーカイブページ：記事タイトルのマスホバー色変更 ----- */
+#content .post-title a {
+  color: #160f29;
+}
+#content .post-title a:hover {
+  color: #000154;
+}
+
+/* ----- アーカイブページ：「続きを読む」の色変更 ----- */
+#content .post-footer a.morelink {
+  background-color: #000154;
+  color: black !important;
+}
+
+/* ----- アーカイブページ：ページャーの色変更 ----- */
+#content .pagination .current {
+  background-color: #160f29;
+}
